@@ -8,22 +8,23 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UITextFieldDelegate {
     
     
-    @IBOutlet var root1TF : UITextField!
-    @IBOutlet var root2TF : UITextField!
+    @IBOutlet var root1TF : UITextField! = nil
+    @IBOutlet var root2TF : UITextField! = nil
     @IBOutlet var ansTextView : UITextView!
     
     
     override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-        refreshUI()
+        //refreshUI()
         //resultsTextView.text = ""
         ansTextView.text = ""
-        //root1TF.text = ""
-        //root2TF.text = ""
+        root2TF.delegate = self
+        root1TF.delegate = self
+        
     }
     
     let quadCalc = QuadFrm(a: 1, b:3, c:4)
@@ -51,6 +52,14 @@ class SecondViewController: UIViewController {
     ansTextView.text = ans
         
     }
+    
+    func textFieldShouldReturn(TextField: UITextField!) -> Bool
+    {
+        root1TF.resignFirstResponder()
+        root2TF.resignFirstResponder()
+        return true
+    }
+    
     @IBAction func textChanged(sender : AnyObject)
     {
     
@@ -67,8 +76,6 @@ class SecondViewController: UIViewController {
     @IBAction func viewTapped(sender : AnyObject) {
     
     }
-    
-
 
 }
 

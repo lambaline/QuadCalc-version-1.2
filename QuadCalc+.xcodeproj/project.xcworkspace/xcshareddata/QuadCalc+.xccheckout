@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DB4A0DC1-4A65-42F8-81E2-34BC5D01DFA4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QuadCalc+</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>463F388F4A61FEB6BDB0F585853585128BB3A376</key>
+		<string>https://github.com/lambaline/QuadCalc-version-1.2.git</string>
+		<key>4FB588591BDAE52A9F9B3262C5C82096A77E3B76</key>
+		<string>https://github.com/lambaline/QuadCalc-.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QuadCalc+.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>463F388F4A61FEB6BDB0F585853585128BB3A376</key>
+		<string>../..</string>
+		<key>4FB588591BDAE52A9F9B3262C5C82096A77E3B76</key>
+		<string>../..QuadCalc+</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lambaline/QuadCalc-version-1.2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>463F388F4A61FEB6BDB0F585853585128BB3A376</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>463F388F4A61FEB6BDB0F585853585128BB3A376</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QuadCalc+</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4FB588591BDAE52A9F9B3262C5C82096A77E3B76</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QuadCalc+QuadCalc+</string>
+		</dict>
+	</array>
+</dict>
+</plist>

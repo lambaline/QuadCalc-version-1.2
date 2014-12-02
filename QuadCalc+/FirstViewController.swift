@@ -8,11 +8,11 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet var aTextField : UITextField!
-    @IBOutlet var bTextField : UITextField!
-    @IBOutlet var cTextField : UITextField!
+    @IBOutlet var aTextField : UITextField! = nil
+    @IBOutlet var bTextField : UITextField! = nil
+    @IBOutlet var cTextField : UITextField! = nil
     @IBOutlet var resultsTextView : UITextView!
     @IBOutlet var albl : UILabel!
     @IBOutlet var blbl : UILabel!
@@ -29,12 +29,17 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        refreshUI()
+        //refreshUI()
         resultsTextView.text = ""
         //calcFrmView.text = ""
         albl.text = "x"
         blbl.text = "x"
         clbl.text = "1"
+        
+        aTextField.delegate = self
+        bTextField.delegate = self
+        cTextField.delegate = self
+        
     }
     
     let quadCalc = QuadFrm(a: 1, b:3, c:4)
@@ -52,7 +57,13 @@ class FirstViewController: UIViewController {
     }
     
    
-        //equationText.text = " \(a)x^2 + \(b)x + \(c)"
+    func textFieldShouldReturn(TextField: UITextField!) -> Bool
+    {
+        aTextField.resignFirstResponder()
+        bTextField.resignFirstResponder()
+        cTextField.resignFirstResponder()
+        return true
+    }
     
     
     @IBAction func calculateTapped(sender : AnyObject)
@@ -66,19 +77,24 @@ class FirstViewController: UIViewController {
         
         resultsTextView.text = ans
         
+        //refreshUI()
+        
         //quationText.text = " \(a)x + \(b)x + \(c)"
         albl.text = "\(a)x"
         blbl.text = "\(b)x"
         clbl.text = "\(c)"
-    }
-    @IBAction func textChanged(sender : AnyObject)
-    {
+        
         aTextField.resignFirstResponder()
         bTextField.resignFirstResponder()
         cTextField.resignFirstResponder()
+    }
+    
+    @IBAction func textChanged(sender : AnyObject)
+    {
+        
         ///rt1TF.resignFirstResponder()
         //rt2TF.resignFirstResponder()
-        refreshUI()
+        
         
     }
     
