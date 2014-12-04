@@ -25,7 +25,6 @@ class QuadFrm
     
     func calcRoot1(a:Double, b:Double, c:Double) -> Double
     {
-        //-b squrt b2 - 4ac / 2a
         var temp1 = sqrt((b * b) - 4 * a * c)
         var ans = (-b + temp1)/(2 * a)
         return ans
@@ -35,6 +34,29 @@ class QuadFrm
     {
         var temp1 = sqrt((b * b) - 4 * a * c)
         var ans = (-b - temp1)/(2 * a)
+        return ans
+    }
+    
+    func getDisc(a:Double, b:Double, c:Double) -> String
+    {
+        var ans = ""
+        var desc = sqrt((b*b)-4*a*c)
+        if(desc == 0)
+        {
+            ans = "There will only be one answer"
+        }
+        else if(desc % 2 == 0 && desc > 0)
+        {
+            ans = "The answers will be real and rational"
+        }
+        else if(desc % 2 != 0)
+        {
+            ans = "The answers will be real and irrational"
+        }
+        else if(desc < 0)
+        {
+            ans = "The answers will be imagnary"
+        }
         return ans
     }
     
